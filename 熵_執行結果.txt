@@ -1,0 +1,36 @@
+Prelude> :l "熵.hs"
+[1 of 1] Compiling Main             ( 熵.hs, interpreted )
+Ok, one module loaded.
+*Main> main
+---table1---
+Entropy: 2.1589
+Average Coding Length: 2.2500
+Compression Ratio: 1.33 : 1
+
+---table2---
+Entropy: 1.6010
+Average Coding Length: 3.3000
+Compression Ratio: 0.61 : 1
+
+---uniquelyDecodable1---
+False
+---uniquelyDecodable2---
+False
+---uniquelyDecodable3---
+False
+---uniquelyDecodable4---
+False
+---uniquelyDecodable5---
+True
+table:
+Just ["0","10","110","1110"]
+---uniquelyDecodable6---
+True
+table:
+Just ["01","011","0111","11","1"]
+---uniquelyDecodable7---
+False
+---uniquelyDecodable8---
+True
+table:
+Just ["0","01","11","1"]
