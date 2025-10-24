@@ -1,0 +1,62 @@
+*Main> :r
+[1 of 1] Compiling Main             ( HuffmanCoding_Dynamic.hs, interpreted )
+Ok, one module loaded.
+*Main> main
+fixedCode:
+["000","001","010","011","100"]
+
+input: a
+tree:
+(' ' 1 ('N' 0 . .) ('a' 1 . .))
+output: 
+000
+set:
+fromList "a"
+
+input: aa
+tree:
+(' ' 2 ('N' 0 . .) ('a' 2 . .))
+output:
+0001
+set:
+fromList "a"
+
+input: ab
+tree:
+(' ' 2 (' ' 1 ('N' 0 . .) ('b' 1 . .)) ('a' 1 . .))
+output:
+0000001
+set:
+fromList "ab"
+
+input: abc
+tree:
+(' ' 3 ('a' 1 . .) (' ' 2 (' ' 1 ('N' 0 . .) ('c' 1 . .)) ('b' 1 . .)))
+output:
+000000100010
+set:
+fromList "abc"
+
+input: abaccc
+tree:
+(' ' 6 ('c' 3 . .) (' ' 3 (' ' 1 ('N' 0 . .) ('b' 1 . .)) ('a' 2 . .)))
+output:
+000000110001000111
+set:
+fromList "abc"
+
+input: abacccc
+tree:
+(' ' 7 (' ' 3 (' ' 1 ('N' 0 . .) ('b' 1 . .)) ('a' 2 . .)) ('c' 4 . .))
+output:
+0000001100010001110
+set:
+fromList "abc"
+
+input: ababba
+tree:
+(' ' 6 (' ' 3 ('N' 0 . .) ('a' 3 . .)) ('b' 3 . .))
+output:
+00000011010101
+set:
+fromList "ab"
